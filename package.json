@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "project-helpers": "https://github.com/Kirbo/project-helpers#master"
+  },
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.cicd.fail:kirbo/test.git",
+  "author": "Kimmo Saari <kirbownz@me.com>",
+  "license": "MIT",
+  "scripts": {
+    "tag:list": "tag-list",
+    "tag:commit": "tag-commit",
+    "deploy:dev": "echo 'deploy to dev' && yarn tag:commit dev",
+    "deploy:prod": "echo 'deploy to prod' && yarn tag:commit prod"
+  }
+}
