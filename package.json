@@ -11,7 +11,7 @@
   "scripts": {
     "tag:list": "tag-list",
     "tag:commit": "tag-commit",
-    "deploy:dev": "echo 'deploy to dev' && yarn tag:commit dev",
-    "deploy:prod": "echo 'deploy to prod' && yarn tag:commit prod"
+    "deploy:dev": "echo 'deploying to dev' && sleep 1 && yarn tag:commit dev",
+    "deploy:prod": "echo 'deploying to prod' && sleep 3 && yarn tag:commit prod"
   }
 }
